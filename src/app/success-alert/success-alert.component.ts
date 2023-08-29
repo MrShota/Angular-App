@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./success-alert.component.css']
 })
 export class SuccessAlertComponent {
-
+  serverId: number = 12;
+  serverStatus:string='on line'
 }
