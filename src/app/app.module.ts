@@ -4,15 +4,12 @@ import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FirstComponent } from './first/first.component';
-import { SecondComponent } from './second/second.component';
+
 
 @NgModule({
   declarations: [
-    AppComponent,
-    FirstComponent,
-    SecondComponent
-  ],
+    AppComponent
+ ],
   imports: [
     BrowserModule,
     AppRoutingModule,
