@@ -10,12 +10,21 @@ export class SuccessAlertComponent {
   serverStatus: string = 'on line'
 
   allowNewServer = false;
-  
+  serverAdded = 'Add Server';
+  updateServerName = '';
+
   constructor() {
     setTimeout(() => {
       this.allowNewServer = true;
     }, 2000);
   }
+  onCreateStatus() {
+    this.serverAdded = 'server added';
 
+  }
+  onUpdateServerName(event) {
+    console.log(event.target.value)
+    this.updateServerName = event.target.value;
+  }
 
 }

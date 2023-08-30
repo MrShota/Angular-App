@@ -1,2 +1,7 @@
-<button class="btn btn-primary" [disabled]="!allowNewServer">Add Server</button>
+<button class="btn btn-primary" [disabled]="!allowNewServer"  
+(click)="onCreateStatus()">Add Server</button>
+<input type="text"
+ (input)="onUpdateServerName($event)" >
+ <h3>{{updateServerName}}</h3>
+<p>{{serverAdded}}</p>
 <p>Server with ID {{serverId}} is {{serverStatus}}</p>
