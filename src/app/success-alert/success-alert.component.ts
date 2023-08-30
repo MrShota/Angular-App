@@ -7,5 +7,15 @@ import { Component } from '@angular/core';
 })
 export class SuccessAlertComponent {
   serverId: number = 12;
-  serverStatus:string='on line'
+  serverStatus: string = 'on line'
+
+  allowNewServer = false;
+  
+  constructor() {
+    setTimeout(() => {
+      this.allowNewServer = true;
+    }, 2000);
+  }
+
+
 }
