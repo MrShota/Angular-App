@@ -6,25 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./success-alert.component.css']
 })
 export class SuccessAlertComponent {
-  serverId: number = 12;
-  serverStatus: string = 'on line'
-
-  allowNewServer = false;
-  serverAdded = 'Add Server';
-  serverName = '';
-
-  constructor() {
-    setTimeout(() => {
-      this.allowNewServer = true;
-    }, 2000);
-  }
-  onCreateStatus() {
-    this.serverAdded = 'server added. The name is ' + this.serverName;
-
-  }
-  onUpdateServerName(event) {
-    console.log(event.target.value)
-    this.serverName = event.target.value;
-  }
-
+  
 }
