@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./success-alert.component.css']
 })
 export class SuccessAlertComponent {
-  
+ 
+  userName: string = '';
+  btnDelete: string = 'Clear'
+  activateBtn: boolean = true;
+
+  clearInput() {
+    this.userName = '';
+  }
+
 }
