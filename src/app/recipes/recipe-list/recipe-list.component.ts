@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Recipe } from '../recipe.model';
 
 @Component({
   selector: 'app-recipe-list',
@@ -6,7 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./recipe-list.component.css']
 })
 export class RecipeListComponent {
-  recipes = [];
+  recipes: Recipe[] = [
+    new Recipe('test recipe','test too','https://www.acouplecooks.com/wp-content/uploads/2019/10/Spaghetti-Squash-Recipe-with-Pesto-008-784x980.jpg'),
+    new Recipe('test recipe','test too','https://www.acouplecooks.com/wp-content/uploads/2019/10/Spaghetti-Squash-Recipe-with-Pesto-008-784x980.jpg')
+  ];
 
 
 }
